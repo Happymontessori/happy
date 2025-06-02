@@ -1,0 +1,262 @@
+<!DOCTYPE html> 
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Trường Mầm Non HappyKids - môi trường giáo dục mầm non chất lượng cao, an toàn và thân thiện tại Hải Dương." />
+  <title>Trường Mầm Non HappyKids</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://scontent-hkg1-1.xx.fbcdn.net/v/t1.15752-9/494826486_9872912239428501_5114376358970456364_n.jpg?stp=dst-jpg_s526x395_tt6&_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_ohc=pTJ3PvYjeeoQ7kNvwF-voH9&_nc_oc=Adky_2B_lCJQdmlbBn-dH5p5GicMDuwJOWbdFpdxoHWPk6bKssbR8DOBFXxS5m09wX9op_W32xPv-OUjITRriMGO&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-hkg1-1.xx&oh=03_Q7cD2QHTwlsv9p3406hm8u3mox1W2WbJn4wRmldjU21u1Wvjzw&oe=6863967D') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      width: 100%;
+      overflow: hidden;
+    }
+    header img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    nav {
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #ff6f61;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      color: #e65b50;
+    }
+    .banner {
+      position: relative;
+      height: 350px;
+      border-bottom: 5px solid #ff6f61;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2.8rem;
+      font-weight: 700;
+      text-align: center;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+      background-image: url('banner.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      filter: brightness(0.65);
+    }
+    .banner .banner-text {
+      position: relative;
+      z-index: 2;
+      padding: 0 20px;
+    }
+    main {
+      max-width: 1000px;
+      margin: 40px auto 60px;
+      padding: 0 20px;
+      background: rgba(255 255 255 / 0.9);
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.1);
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    h2 {
+      color: #ff6f61;
+      margin-bottom: 15px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 2rem;
+    }
+    h3 {
+      color: #ff6f61;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    p {
+      max-width: 900px;
+      margin: 0 auto 15px;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    ul {
+      max-width: 900px;
+      margin: 0 auto 15px 40px;
+      font-size: 18px;
+      line-height: 1.5;
+      color: #444;
+    }
+    .hoc-phi-images, .hoat-dong-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .hoc-phi-images img, .hoat-dong-images img {
+      width: 300px;
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      object-fit: cover;
+    }
+    .hoc-phi-images img:hover, .hoat-dong-images img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #ff6f61;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hoc-phi-images img, .hoat-dong-images img {
+        width: 45%;
+      }
+    }
+    @media (max-width: 600px) {
+      .banner {
+        height: 200px;
+        font-size: 2rem;
+      }
+      nav a {
+        font-size: 16px;
+      }
+      nav {
+        gap: 15px;
+      }
+      .hoc-phi-images img, .hoat-dong-images img {
+        width: 100%;
+      }
+      main {
+        margin: 20px 10px 40px;
+        padding: 10px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://scontent-hkg4-2.xx.fbcdn.net/v/t39.30808-6/484360587_545061168632191_8859867928005595647_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=Bda4BvUNizMQ7kNvwGZ8ajT&_nc_oc=Adkmn5wgrVzC_Va5gXktpy3fKXlfpmJbRJXs_kDcz8DlLBCLNlo4gmrm4TQoRGgVsZA8PuFbRsofhCTo66nnPOMr&_nc_zt=23&_nc_ht=scontent-hkg4-2.xx&_nc_gid=zjBQ13fDAj7FKtIXcZ8uPA&oh=00_AfK_cIkTMkANfmHC3U1G59b0VUyBYuwlKaHJVVY36CsuTw&oe=6841FE06" alt="Logo Trường Mầm Non HappyKids">
+  </header>
+
+  <nav>
+    <a href="#trangchu">Trang chủ</a>
+    <a href="#tuyensinh">Tuyển sinh</a>
+    <a href="#hoatdong">Hoạt động</a>
+    <a href="#gioithieu">Giới thiệu</a>
+    <a href="#lienhe">Liên hệ</a>
+  </nav>
+
+  <div class="banner" role="img" aria-label="Chào mừng đến với HappyKids">
+    <div class="banner-text">
+      Chào mừng đến với HappyKids!
+    </div>
+  </div>
+
+  <main>
+    <section id="trangchu">
+      <h2>Trang chủ</h2>
+      <p>Chào mừng quý phụ huynh và các bé đến với Trường Mầm Non HappyKids – ngôi trường yêu thương và phát triển toàn diện cho trẻ. Hãy cùng chúng tôi khám phá một môi trường học tập an toàn, thân thiện và tràn đầy niềm vui nhé!</p>
+    </section>
+
+    <section id="tuyensinh">
+      <h2>Thông tin tuyển sinh</h2>
+      <p>🎉 Happy Montessori Preschool thông báo tuyển sinh năm học 2025 – 2026 tại các cơ sở:</p>
+      <ul>
+        <li>🔹 Cơ sở 1: Khu phố Sình, đường 20/9, Thị trấn Phú Thái, H. Kim Thành, Hải Dương.</li>
+        <li>🔹 Cơ sở 2: Khu dân cư số 2, Thị trấn Thanh Hà, Hải Dương.</li>
+      </ul>
+      <h3>🔹 Đối tượng tuyển sinh:</h3>
+      <p>Trẻ từ 18 tháng tuổi đến 6 tuổi.</p>
+      <h3>🔹 Chương trình học:</h3>
+      <ul>
+        <li>Chương trình giáo dục chuẩn Montessori.</li>
+        <li>Chương trình tiếng Anh.</li>
+        <li>Chương trình phát triển kỹ năng mềm, năng khiếu, thể chất, nghệ thuật.</li>
+      </ul>
+      <h3>🔹 Thời gian nhận hồ sơ:</h3>
+      <p>Từ ngày 01/06/2025 đến khi đủ chỉ tiêu.</p>
+      <h3>🔹 Hồ sơ đăng ký gồm:</h3>
+      <ul>
+        <li>Đơn xin nhập học (theo mẫu của trường).</li>
+        <li>Bản sao giấy khai sinh.</li>
+      </ul>
+      <h3>🔹 Thông tin liên hệ:</h3>
+      <p>
+        📞 Hotline: 0349.597.214 / 0775.335.446<br>
+        📧 Email: happymontessori.hd@gmail.com<br>
+        🌐 Facebook: Happy Montessori Preschool HD
+      </p>
+      <h3>🔹 Bảng học phí và các khoản phải nộp:</h3>
+      <div class="hoc-phi-images">
+        <img src="https://scontent-sin11-1.xx.fbcdn.net/v/t1.15752-9/491219650_739076528843907_7079059690512611989_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_ohc=ukTXJtCgkuQQ7kNvwEussrI&_nc_oc=AdlTYB4Xz9THO0yc1KTkWkpM95-otDxE6mZ4H67FL1zQDnCqgKzIvBUoYN9I4ESBtZK3GsBNl6cFcGPoNgvVV0F9&_nc_zt=23&_nc_ht=scontent-sin11-1.xx&oh=03_Q7cD2QGp_bvcwCPRfrvIDgfsaaet9zB19UqVHSjRE9_2unazfA&oe=6863992F" alt="Bảng học phí và các khoản phải nộp - K5" />
+        <img src="https://scontent-sin2-3.xx.fbcdn.net/v/t1.15752-9/491218550_1395576714899118_2432944266952555517_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=UMLLMuruVPYQ7kNvwFcNqX8&_nc_oc=AdkIoDBcgDNhuviJlYgamHIKz9MrpNtugiXSwquZgtGVPpSwiHLwgd3oSP2ug2lSUAh3yoYGYYXEpuEPCJR7cCvs&_nc_zt=23&_nc_ht=scontent-sin2-3.xx&oh=03_Q7cD2QEQcrSDqzNoTkg0CLV6gafP0mrp_QlllO3LdMD_rwyWvQ&oe=686371EF" alt="Bảng học phí và các khoản phải nộp - K10" />
+        <img src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.15752-9/495072531_2196717630768826_680516582295740239_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=XNI5RPbUigwQ7kNvwFqChFp&_nc_oc=AdnDuMLHDyGSmbJNABPvFHi9yOn1lFKNOyReyxCb9S4_LDKfzRMMRWGhbqTU6svYO5boBaus1Zu_hloWNwXNDub6&_nc_zt=23&_nc_ht=scontent-sin6-2.xx&oh=03_Q7cD2QEsPy-gQHhissthJdrka9TZaTCtCLq7wrzKuKaGgzm7gQ&oe=6863656A" alt="Bảng học phí và các khoản phải nộp - K20" />
+      </div>
+    </section>
+
+    <section id="hoatdong">
+      <h2>Hoạt động nổi bật</h2>
+      <p>Trường Mầm Non HappyKids thường xuyên tổ chức các hoạt động ngoại khóa, sự kiện và lễ hội cho các bé, giúp bé phát triển toàn diện về kỹ năng xã hội, sáng tạo và khám phá thế giới xung quanh.</p>
+      <div class="hoat-dong-images">
+        <img src="https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-6/500168558_602957516175889_8202352145551387339_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=YMvWVGuQCfkQ7kNvwEdN7ld&_nc_oc=Adnu6qXMI3bBr1p_Ak40mOdg8cegZFrU_z-UoO8g8Ts8wO2lXLqHYv9SAsQOv2xTIIGUcme1qEvAhwW7rYN5X_at&_nc_zt=23&_nc_ht=scontent-hkg4-1.xx&_nc_gid=b523ow_Uj1ACaNnUXudc3A&oh=00_AfLhxV3Rp4d0RFDbhRFoi_Q9InN891RRjLnHs364Xf58yg&oe=68421FFE" alt="Hoạt động 1">
+        <img src="https://scontent-hkg1-1.xx.fbcdn.net/v/t39.30808-6/499454904_600704993067808_8066541698867653393_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ScBkZkH0ONcQ7kNvwHzDp8S&_nc_oc=Adm2nvjBT5F8FZIJNAtpQVSWND91TF5A6U44qXX9TngrJGbS93djHhHxS_pbC88aYzT0eJH5AKic8ZNWd61UYtTa&_nc_zt=23&_nc_ht=scontent-hkg1-1.xx&_nc_gid=ab89oD88Lcl4r3CKYb8ODg&oh=00_AfJOJaJDrptodMZPR2Tyl9y1zNtsh4BM0WVYO_l6-QMQVg&oe=6841F8EE" alt="Hoạt động 2">
+        <img src="https://scontent-hkg4-2.xx.fbcdn.net/v/t39.30808-6/478947813_524903717314603_8896595409266687044_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=6uFL2GzyfigQ7kNvwFTban1&_nc_oc=AdnOsnlBJSy_Ekc6u_ZGVQ3TL-fcOfNmDA1GAVvY8bJEiNJvXMGwAjZTBBoVrJ93QItde-t2e1NdQGAONcPncbNn&_nc_zt=23&_nc_ht=scontent-hkg4-2.xx&_nc_gid=OnM9T1b7aN99BwJpw9wMbg&oh=00_AfKL7RiN03U0tcpfiKflTlHgXqY1GCWJSxVblz6rjwW3Og&oe=684209D6" alt="Hoạt động 3">
+      </div>
+    </section>
+
+    <section id="gioithieu">
+      <h2>Giới thiệu về HappyKids</h2>
+      <p>Trường Mầm Non HappyKids là nơi trẻ được học tập, vui chơi và phát triển trong môi trường yêu thương, chuyên nghiệp với đội ngũ giáo viên giàu kinh nghiệm và nhiệt huyết.</p>
+      <p>Chúng tôi cam kết mang đến cho bé một môi trường an toàn, sáng tạo và thân thiện nhất để bé có thể phát triển toàn diện và hạnh phúc mỗi ngày.</p>
+    </section>
+
+    <section id="lienhe">
+      <h2>Liên hệ</h2>
+      <p>Địa chỉ:</p>
+      <ul>
+        <li>📍 Cơ sở 1: Khu phố Sình, đường 20/9, Thị trấn Phú Thái, H. Kim Thành, Hải Dương.</li>
+        <li>📍 Cơ sở 2: Khu dân cư số 2, Thị trấn Thanh Hà, Hải Dương.</li>
+      </ul>
+      <p>Hotline: 0349.597.214 / 0775.335.446</p>
+      <p>Email: happymontessori.hd@gmail.com</p>
+      <p>Facebook: Happy Montessori Preschool HD</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Trường Mầm Non HappyKids. Bản quyền thuộc về HappyKids.
+  </footer>
+</body>
+</html>
